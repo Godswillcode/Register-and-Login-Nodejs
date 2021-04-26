@@ -2,7 +2,7 @@ import express from "express";
 
 const app = express.Router();
 
-app.get("/",(req,res) => res.status(200).json({ message: "Hi Welcome to a working server "}));
+app.get("/",(req,res) => res.status(200).json({ message: "Hi Welcome to a working server created by Godswill "}));
 
 app.all("*", (req,res) => res.status(404).json({ message: "Ouch the routes does not exist!!!"}));
 
